@@ -1,0 +1,227 @@
+/* CSS Reset*/
+/* This is a simple CSS reset to remove default browser styles */
+body {
+  font-family: "Baloo 2", sans-serif;
+  background: url(../bg.jpg) no-repeat center center/cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*CSS Veriable*/
+:root {
+  --navbar-height: 59px;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  background-color: #d7dfd6;
+}
+/* Navigation Bar :Logo and Image*/
+#Logo {
+  margin: 10px 5px;
+}
+#Logo img {
+  height: 56px;
+  margin: 3px 5px;
+}
+/* Navigation Bar :List Styling*/
+img {
+  display: flex;
+  width: 66px;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: var(--navbar-height);
+  text-align: start;
+  align-items: center;
+  justify-content: flex-start;
+}
+li {
+  margin: 0 10px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #046b1b;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 16px;
+  padding: 0px 0px;
+}
+#navbar ::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #be1212;
+  margin-top: 5px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+}
+/* Navigation Bar :Hover Effect*/
+li:hover {
+  display: block;
+  background-color: #b0bde9;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  margin-top: 5px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.89;
+  top: 0;
+}
+#home h {
+  font-size: 3.5rem;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#home p {
+  font-size: 1.6rem;
+  color: #046b1b;
+  text-align: center;
+}
+/* Testimonials Section */
+#testimonials {
+    margin: 34px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+    color: #046b1b;
+  }
+  #testimonials .box1 {
+    border: 2px solid #046b1b;
+    border-radius: 10px;
+    width: 100%;
+  }
+  #testimonials .box1 img {
+    margin: auto;
+    display: block;
+  }
+  #testimonials .box1 h {
+    font-size: 2.5rem;
+    color: #046b1b;
+    text-align: center;
+    font-weight: bold;
+  }
+  #testimonials .box1 p {
+    font-size: 1.6rem;
+    color: #046b1b;
+    text-align: center;
+  }
+  #testimonials .box1:hover {
+    background-color: #b0bde9;
+    color: #046b1b;
+    cursor: pointer;
+  }
+  #testimonials .testimonials {
+    height: 0px;
+    width: 100%;
+  }
+/* Services Section */
+#services {
+  margin: 34px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px;
+}
+#services .box {
+  border: 2px solid #046b1b;
+  border-radius: 10px;
+  width: 100%;
+}
+#services .box img {
+  margin: auto;
+  display: block;
+}
+#services .box h {
+  font-size: 2.5rem;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#services .box p {
+  font-size: 1.6rem;
+  color: #046b1b;
+  text-align: center;
+}
+#services .box:hover {
+  background-color: #b0bde9;
+  color: #046b1b;
+  cursor: pointer;
+}
+#srvices .yoga {
+  height: 220px;
+  width: 100%;
+}
+/* Utilitiy Classes */
+.h-primary {
+  font-size: 1.6rem;
+  padding: 12px 0px;
+  color: #046b1b;
+  text-align: center;
+}
+.h-secondary {
+  font-size: 1.6rem;
+  padding: 12px 0px;
+  color: #046b1b;
+  text-align: center;
+}
+.btn {
+  background-color: #046b1b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #b0bde9;
+  color: #046b1b;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: #d7dfd6;
+}
+.footer p {
+  font-size: 1.2rem;
+  color: #046b1b;
+  text-align: center;
+}

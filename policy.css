@@ -1,0 +1,77 @@
+/* CSS for the policy.html page */
+/*   height: 2px;   /* Height of the line */ */         
+ */
+/*   background-color: #034703;  /* Color of the line */ */
+/*   position: absolute;    
+/*   top: 0;  /* Positioning the line at the top */ */
+/*   left: 0;  /* Positioning the line at the left */ */
+ */ 
+/*   width: 100%;  /* Full width of the page */ */
+/*   z-index: -1;  /* Ensures the line is behind other elements */ */
+/* } */
+/*  */
+/* a:hover {    
+ */
+ section.policy-container {
+    background-color: #f6f7fc; /* Background color on hover */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: underline; /* Underline text on hover */
+  }
+li {
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 2px solid #034703; /* Divider color */  
+  }
+
+.h-primary {
+    font-size: 23px;
+    padding: 0px 0px;
+    color: #046b1b;
+    text-align: center;
+  }
+#transparent-box {
+    background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+      padding: 0px; /* Adds space inside the box */
+      border-radius: 71px; /* Rounds the corners of the box */
+      box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+      margin: 2px; /* Adds space outside the box */
+      width: 100%; /* Sets the width of the box */
+      height: 100%; /* Sets the height of the box */  
+      display: flex; /* Enables flexbox layout */
+    }
+#policy {
+  display: flex;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 2px solid #034703; /* Divider color */
+  }
+  li.disclaimar:hover {
+    display: block;
+    background-color: #f6f7fc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  h1.policy {
+    display: block;
+      font-size: 2em;
+      margin-block-start: -0.33em;
+      margin-block-end: 1.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 9px;
+      font-weight: bold;
+      unicode-bidi: isolate;
+      padding: 10px;
+  }
+  h1.policy:hover {
+    display: block;
+    background-color: #f6f7fc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+  }

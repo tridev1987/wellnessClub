@@ -1,0 +1,697 @@
+/* CSS Reset*/
+/* This is a simple CSS reset to remove default browser styles */
+body {
+  font-family: "Baloo 2", sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+hr {
+  height: 2px;
+  border: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+/*CSS Veriable*/
+:root {
+  --navbar-height: 59px;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Navigation Bar :List Styling*/
+img {
+  max-width: 100%;
+  height: auto;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: var(--navbar-height);
+  text-align: start;
+  align-items: center;
+  justify-content: flex-end;
+}
+li {
+  margin: 0 10px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.health {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #094d09;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 16px;
+  padding: 0px 0px;
+}
+a {
+  text-decoration: none;
+  color: #094d09;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 16px;
+  padding: 0px 0px;
+}
+#navbar ::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+}
+
+/* Navigation Bar :Hover Effect*/
+li:hover {
+  display: block;
+  background-color: #a2e292;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* Header section */
+Header {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.facebook {
+  margin: 0px 5px;
+  display: flex;
+}
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 400px;
+  top: 0px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  filter: blur(5px);
+  margin-top: 5px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.89;
+  top: 0;
+}
+#home h {
+  font-size: 3.5rem;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#home p {
+  font-size: 1.6rem;
+  color: #046b1b;
+  text-align: center;
+}
+/* About US section */
+
+#about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+#about-us::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  margin-top: 5px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.89;
+  top: 0;  
+}
+#about-us h {
+  font-size: 3.5rem;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#about-us p {
+  font-size: 1.6rem;
+  color: #046b1b;
+  text-align: center;
+}
+
+/* Success Stories Section */
+#success {
+  margin: 34px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px;
+}
+#success .box {
+  border: 2px solid #046b1b;
+  border-radius: 10px;
+  width: 100%;
+  margin: 3px 20px;
+  padding: 34px;
+}
+#success .box img {
+  margin: auto;
+  display: block;
+}
+#success .box h2 {
+  font-size: 2.5rem;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#success .box p {
+  font-size: 1.6rem;
+  color: #046b1b;
+  text-align: center;
+}
+#success .box:hover {
+  background-color: #b0bde9;
+  color: #046b1b;
+  cursor: pointer;
+}
+#success .success {
+  height: 0px;
+  width: 100%;
+}
+/* Services Section */
+#services {
+  margin: 34px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px;
+}
+#services .box {
+  border: 2px solid #046b1b;
+  border-radius: 10px;
+  width: 100%;
+  margin: 3px 20px;
+  padding: 34px;
+}
+#services .box img {
+  margin: auto;
+  display: block;
+}
+#services .box h2 {
+  font-size: 2.5rem;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#services .box p {
+  font-size: 1.6rem;
+  color: #046b1b;
+  text-align: center;
+}
+#services .box:hover {
+  background-color: #b0bde9;
+  color: #046b1b;
+  cursor: pointer;
+}
+#srvices .yoga {
+  height: 220px;
+  width: 100%;
+}
+/* Utilitiy Classes */
+.h-primary {
+  font-size: 2rem;
+  padding: 0px 0px;
+  color: #046b1b;
+  text-align: center;
+}
+.h-secondary {
+  font-size: 1.6rem;
+  padding: 12px 0px;
+  color: #046b1b;
+  text-align: center;
+}
+.btn {
+  background-color: #046b1b;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn:hover {
+  background-color: #b0bde9;
+  color: #046b1b;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: #d7dfd6;
+}
+.footer p {
+  font-size: 1.2rem;
+  color: #046b1b;
+  text-align: center;
+}
+.transparent-box-home {
+  background-color: rgba(231, 245, 182, 0.5); /* White with 50% transparency */
+  padding: 0px; /* Adds space inside the box */
+  border-radius: 20px; /* Rounds the corners of the box */
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+  margin: 2px; /* Adds space outside the box */
+  width: 100%; /* Sets the width of the box */
+  height: 600px; /* Sets the height of the box */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+}
+/* Parent container to hold both boxes */
+.container {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style for the first box */
+.transparent-box-join {
+  background-color: rgba(229, 230, 169, 0.5);
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 2px;
+  width: 50%; /* Adjust width to fit side by side */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Align content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Style for the second box */
+.transparent-box-book {
+  background-color: rgba(230, 183, 169, 0.5);
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 2px;
+  width: 49%; /* Adjust width to fit side by side */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack boxes vertically on smaller screens */
+    align-items: center;
+  }
+  .transparent-box-join,
+  .transparent-box-book {
+    width: 90%; /* Full width for mobile view */
+    height: auto; /* Adjust height based on content */
+  }
+}
+.transparent-box-about {
+  background-color: rgba(235, 188, 150, 0.5); /* White with 50% transparency */
+  padding: 0px; /* Adds space inside the box */
+  border-radius: 20px; /* Rounds the corners of the box */
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+  margin: 2px; /* Adds space outside the box */
+  width: 100%; /* Sets the width of the box */
+  height: 400px; /* Sets the height of the box */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+}
+.transparent-box-services {
+  background-color: rgba(219, 235, 216, 0.5); /* White with 50% transparency */
+  padding: 0px; /* Adds space inside the box */
+  border-radius: 20px; /* Rounds the corners of the box */
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+  margin: 2px; /* Adds space outside the box */
+  width: 100%; /* Sets the width of the box */
+  height: 450px; /* Sets the height of the box */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+}
+.transparent-box-success {
+  background-color: rgba(243, 177, 177, 0.5); /* White with 50% transparency */
+  padding: 0px; /* Adds space inside the box */
+  border-radius: 20px; /* Rounds the corners of the box */
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+  margin: 2px; /* Adds space outside the box */
+  width: 100%; /* Sets the width of the box */
+  height: 450px; /* Sets the height of the box */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+}
+.transparent-box-blog {
+  background-color: rgba(182, 233, 181, 0.5);
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 2px;
+  width: 49%; /* Adjust width to fit side by side */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Align content vertically */
+  align-items: center; /* Center content horizontally */
+}
+.transparent-box-contact {
+  background-color: rgba(229, 230, 169, 0.5);
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2);
+  margin: 2px;
+  width: 49%; /* Adjust width to fit side by side */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Align content vertically */
+  align-items: center; /* Center content horizontally */
+}
+.transparent-box {
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+  padding: 0px; /* Adds space inside the box */
+  border-radius: 20px; /* Rounds the corners of the box */
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+  margin: 2px; /* Adds space outside the box */
+  width: 100%; /* Sets the width of the box */
+  height: 100%; /* Sets the height of the box */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+}
+
+/* Media Query */
+img-icon {
+  display: flex;
+  width: 66px;
+  align-items: center;
+  justify-content: center;
+}
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+}
+.social-media-icons a {
+  text-decoration: none;
+  color: #000; /* Icon color */
+  font-size: 24px; /* Size of icons */
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center; /* Center icons vertically */
+  justify-content: center; /* Center icons horizontally */
+}
+.social-media-icons a:hover {
+  color: #0078d7; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+section.policy-container {
+  background-color: #f6f7fc; /* Background color on hover */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+#policy {
+  display: flex;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 2px solid #034703; /* Divider color */
+}
+h1.policy {
+  display: block;
+  font-size: 2em;
+  margin-block-start: -0.33em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 9px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  padding: 10px;
+}
+.policy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: #d7dfd6;
+}
+#footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: #d7dfd6;
+}
+#footer p {
+  font-size: 1.2rem;
+  color: #046b1b;
+  text-align: center;
+}
+h1#d-primary {
+  display: block;
+  font-size: 2em;
+  margin-block-start: -0.33em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 9px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  padding: 10px;
+}
+/* Contact Section */
+#contact {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+#contact::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  margin-top: 5px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.89;
+  top: 0;
+  background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fG1lZGl0YXRpb258ZW58MHx8fHwxNjg5NTQ3NzA2&ixlib=rb-4.0.3&q=80&w=1080")
+    no-repeat center center/cover;
+  background-size: cover;
+}
+#contact .box {
+  background-color: rgba(255, 255, 255, 0.8); /* White with 50% transparency */
+  padding: 20px; /* Adds space inside the box */
+  border-radius: 20px; /* Rounds the corners of the box */
+  box-shadow: inset -3px -2px 16px 0px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+  margin: 2px; /* Adds space outside the box */
+  width: 100%; /* Sets the width of the box */
+  height: auto; /* Sets the height of the box based on content */
+}
+h1.h-primary-center {
+  font-size: 2rem;
+  padding: 0px 0px;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#contact h {
+  font-size: 3.5rem;
+  color: #046b1b;
+  text-align: center;
+  font-weight: bold;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  color: #046b1b;
+  text-align: left;
+  margin-bottom: 5px; /* Space below the label */
+  font-family: Arial, Helvetica, sans-serif;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem; /* Space inside the input field */
+  font-size: 1.2rem; /* Font size of the input text */
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#contact-box button {
+  background-color: #046b1b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+}/* Your existing CSS styles here */
+
+/* Responsive Design */
+/* Responsive for Tablets */
+@media (max-width: 1024px) {
+  #home, #about-us, #services, #success {
+    padding: 3px 50px; /* Reduce padding */
+    height: auto; /* Adjust height */
+  }
+  
+  .container {
+    flex-direction: column; /* Stack items */
+    align-items: center;
+  }
+  
+  .transparent-box-join, .transparent-box-book,
+  .transparent-box-blog, .transparent-box-contact {
+    width: 90%; /* Take more space */
+    height: auto;
+  }
+
+  ul {
+    justify-content: center; /* Center navbar items */
+  }
+}
+
+/* Responsive for Phones */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    font-size: 16px; /* Reduce font size */
+    padding: 5px;
+  }
+
+  #home, #about-us, #services, #success {
+    padding: 3px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .transparent-box-home, .transparent-box-about,
+  .transparent-box-services, .transparent-box-success {
+    width: 95%; /* Full width */
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media-icons {
+    gap: 10px; /* Reduce space */
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+/* Responsive for Small Phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    font-size: 14px; /* Reduce font size */
+    padding: 5px;
+  }
+
+  #home, #about-us, #services, #success {
+    padding: 3px 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .transparent-box-home, .transparent-box-about,
+  .transparent-box-services, .transparent-box-success {
+    width: 100%; /* Full width */
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media-icons {
+    gap: 5px; /* Reduce space */
+  }
+
+  .footer p {
+    font-size: 12px; /* Further reduce font size */
+  }
+}
+
+/* End of CSS */
+/* CSS for the policy.html page */
